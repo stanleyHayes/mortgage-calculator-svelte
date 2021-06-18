@@ -20,8 +20,8 @@
         <h1>Mortgage Calculator</h1>
     </div>
     <div class="row">
-        <label>Loan Amount</label>
-        <input bind:value={loanAmount} type="number" min="1" class="u-full-width" placeholder="Enter loan amount">
+        <label for="loan">Loan Amount</label>
+        <input id="loan" bind:value={loanAmount} type="number" min="1" class="u-full-width" placeholder="Enter loan amount">
     </div>
     <div class="row">
         <div class="columns six">
@@ -34,7 +34,7 @@
     </div>
     <div class="row">
         <div class="columns six">
-            <label for="years">Interest Rate</label>
+            <label for="rate">Interest Rate</label>
             <input bind:value={rate} min="1" max="2000" id="rate" type="range" name="rate" class="u-full-width">
         </div>
         <div class="columns six outputs">
